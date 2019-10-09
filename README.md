@@ -78,8 +78,6 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
 	//TODO
 
----
-
 ###**Web**
 
 ---
