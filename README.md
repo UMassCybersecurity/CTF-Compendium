@@ -6,7 +6,7 @@
 
 A list of CTF problems, techniques and guides mean to be a lookup table to possible solutions of CTF problems
 
-###**Cryptography**
+## **Cryptography**
 
 ---
 
@@ -78,22 +78,35 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
 	//TODO
 
-###**Web**
+## **Web**
 
 ---
 
-* Basics
+* Robots.txt 
 	
-	**Robots.txt**
-
 	When given a website, always check for a /robots.txt file at the root link. You may never know what will be hidden there.
 
-###Forensics
+* Tools
+
+    * [Burpsuite](https://portswigger.net/burp)
+
+        - Modern tool for analyzing web applications.
+
+    * [EditThisCookie](http://www.editthiscookie.com/)
+
+        - Open-source web browser extension for editing cookies.
+
+    * [DirBuster](https://tools.kali.org/web-applications/dirbuster)
+
+        - Multi-threaded java application that can use wordlists/brute force to find directories and files on web servers.
 
 
-###Reversing
+## Forensics
 
 
-###Binary Exploitation
+## Reversing
+
+
+## Binary Exploitation
 
 
