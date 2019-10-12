@@ -15,6 +15,11 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 	The most well known subsitution cipher. It is a type of substitution cipher in which each letter in the plaintext is 'shifted' a certain number of places down the alphabet. For example, with a shift of 1, A would be replaced by B, B would become C, and so on.
 
 	Beware! Sometimes the alphabet used is more than just the 26 characters and can use custom character sets like all 255 ASCII characters.
+	
+* Symmetric encryption
+
+	For a stream cipher (ChaCha20 or AES-CTR), the keystream can be obtained by XORing the plaintext and the ciphertext. If nonces are reused, then this keystream can be used for message forgery. AES-GCM is also extremely fragile in this way.
+	// TODO describe ECB-oracle attack
 
 * RSA
 	
@@ -106,6 +111,7 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
 ## Reversing
 
+Ghidra is an open-source reverse engineering tool developed by the NSA.
 
 ## Binary Exploitation
 
