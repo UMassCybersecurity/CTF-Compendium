@@ -8,7 +8,6 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
 ## **Cryptography**
 
----
 
 * Caesar Cipher
 
@@ -16,6 +15,10 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
 	Beware! Sometimes the alphabet used is more than just the 26 characters and can use custom character sets like all 255 ASCII characters.
 	
+* Subsitution Cipher
+
+	General subsitution ciphers are often hard to crack by hand. If your cipher text is letters only, you can use the tool [quipqiup](https://quipqiup.com/) to try and solve them. If this can't solve it, it may not be a subsitution cipher.
+
 * Symmetric encryption
 
 	For a stream cipher (ChaCha20 or AES-CTR), the keystream can be obtained by XORing the plaintext and the ciphertext. If nonces are reused, then this keystream can be used for message forgery. AES-GCM is also extremely fragile in this way.
@@ -85,13 +88,29 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
 ## **Web**
 
----
+* General Tatics
+
+	Web exploits are usually able to be classified into three categories
+
+	- Authentication
+
+	- Session Management 
+
+	- Access Control
 
 * Robots.txt 
 	
 	When given a website, always check for a /robots.txt file at the root link. You may never know what will be hidden there.
 
-* Tools
+* Classic Tools
+
+	* [Requests](https://pypi.org/project/requests/2.7.0/)
+
+		- Python library used to create http requests, very useful for challenges
+
+	* [Curl](https://curl.haxx.se/)
+
+		- Terminal based tool to transfer data with URLs
 
     * [Burpsuite](https://portswigger.net/burp)
 
@@ -105,6 +124,24 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
         - Multi-threaded java application that can use wordlists/brute force to find directories and files on web servers.
 
+* SQL Injections
+	
+	**Classic SQL Injection**
+
+	Often when parsing user input in SQL, the request formed will be something along the lines of: 
+
+	```
+	SELECT author,title,year FROM books WHERE publisher = ‘O’Reilly’ and published=1
+	```
+
+	If the parsing of input is done incorrectly, you can use a ``` ' ``` in a input field and break out of the statement to inject your own code.
+
+	Often an injection will be something along the lines of 
+
+	```
+	admin' OR 1=1--
+	OR 1=1--
+	```
 
 ## Forensics
 
