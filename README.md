@@ -1,13 +1,20 @@
 # CTF-Compendium
 
-> UMass Pentest Club
+## Overview
 
----
+A list of techniques and resources compiled by the UMass Pentest Club meant to serve as lookup table to solutions of CTF problems.
 
-A list of CTF problems, techniques and guides mean to be a lookup table to possible solutions of CTF problems
+## General Resources
 
-## **Cryptography**
+* [Awesome-CTF](https://github.com/apsdehal/awesome-ctf)
 
+    - A curated list of CTF frameworks, libraries, resources, softwares and tutorials. 
+
+* [ctf-tools](https://github.com/zardus/ctf-tools)
+
+    - A collection of setup scripts to install security research tools.
+
+## Cryptography
 
 * Caesar Cipher
 
@@ -86,9 +93,9 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
 	//TODO
 
-## **Web**
+## Web
 
-* General Tatics
+* General Tactics
 
 	Web exploits are usually able to be classified into three categories
 
@@ -98,31 +105,9 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
 	- Access Control
 
-* Robots.txt 
+* `robots.txt` 
 	
-	When given a website, always check for a /robots.txt file at the root link. You may never know what will be hidden there.
-
-* Classic Tools
-
-	* [Requests](https://pypi.org/project/requests/2.7.0/)
-
-		- Python library used to create http requests, very useful for challenges
-
-	* [Curl](https://curl.haxx.se/)
-
-		- Terminal based tool to transfer data with URLs
-
-    * [Burpsuite](https://portswigger.net/burp)
-
-        - Modern tool for analyzing web applications.
-
-    * [EditThisCookie](http://www.editthiscookie.com/)
-
-        - Open-source web browser extension for editing cookies.
-
-    * [DirBuster](https://tools.kali.org/web-applications/dirbuster)
-
-        - Multi-threaded java application that can use wordlists/brute force to find directories and files on web servers.
+	When given a website, always check for a `robots.txt` file at the index. You may never know what will be hidden there.
 
 * SQL Injections
 	
@@ -143,13 +128,68 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 	OR 1=1--
 	```
 
+* JSON Web Tokens (JWT)
+
+    //TODO
+
+    Tool: [jwt_tool](https://github.com/ticarpi/jwt_tool)
+
+* Tools
+
+	* [Requests](https://pypi.org/project/requests/2.7.0/)
+
+		- Python library used to create http requests, very useful for challenges
+
+	* [Curl](https://curl.haxx.se/)
+
+		- Terminal based tool to transfer data with URLs
+
+    * [Burpsuite](https://portswigger.net/burp)
+
+        - Modern tool for analyzing web applications
+
+    * [EditThisCookie](http://www.editthiscookie.com/)
+
+        - Open-source web browser extension for editing cookies
+
+    * [DirBuster](https://tools.kali.org/web-applications/dirbuster)
+
+        - Multi-threaded java application that can use wordlists/brute force to find directories and files on web servers
+
 ## Forensics
 
+* Least Significant Bit
+
+    //TODO
+
+* Tools
+
+    * [stegsolve](https://github.com/zardus/ctf-tools/blob/master/stegsolve/install)
+
+        - Image steganography tool.
+
+    * [Sonic Visualizer](https://www.sonicvisualiser.org/)
+
+        - Audio file analysis tool that can be used to extract and visualize data.
+
+    * [binwalk](https://github.com/ReFirmLabs/binwalk)
+
+        - Analyze file formats and extract hidden file formats inside.
 
 ## Reversing
 
-Ghidra is an open-source reverse engineering tool developed by the NSA.
+* Tools
+
+    * [Ghidra](https://www.nsa.gov/resources/everyone/ghidra/) 
+        
+        - A powerful open-source reverse engineering tool developed by the NSA.
+
 
 ## Binary Exploitation
 
+* Resources
+
+    * [LiveOverflow's Youtube channel](https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w)
+
+        - Very detailed youtube videos that thoroughly teach and explain many common binary exploitation methods. Heavily recommended especially if you are new to binary exploitation.
 
