@@ -4,6 +4,12 @@
 
 A list of techniques and resources compiled by the UMass Pentest Club meant to serve as lookup table to solutions of CTF problems.
 
+## General Resources
+
+* [Awesome-CTF](https://github.com/apsdehal/awesome-ctf)
+
+    - A curated list of CTF frameworks, libraries, resources, softwares and tutorials. 
+
 ## Cryptography
 
 * Caesar Cipher
@@ -99,7 +105,32 @@ A list of techniques and resources compiled by the UMass Pentest Club meant to s
 	
 	When given a website, always check for a `robots.txt` file at the index. You may never know what will be hidden there.
 
-* Classic Tools
+* SQL Injections
+	
+	**Classic SQL Injection**
+
+	Often when parsing user input in SQL, the request formed will be something along the lines of: 
+
+	```
+	SELECT author,title,year FROM books WHERE publisher = ‘O’Reilly’ and published=1
+	```
+
+	If the parsing of input is done incorrectly, you can use a ``` ' ``` in a input field and break out of the statement to inject your own code.
+
+	Often an injection will be something along the lines of 
+
+	```
+	admin' OR 1=1--
+	OR 1=1--
+	```
+
+* JSON Web Tokens (JWT)
+
+    //TODO
+
+    Tool: [jwt_tool](https://github.com/ticarpi/jwt_tool)
+
+* Tools
 
 	* [Requests](https://pypi.org/project/requests/2.7.0/)
 
@@ -121,43 +152,34 @@ A list of techniques and resources compiled by the UMass Pentest Club meant to s
 
         - Multi-threaded java application that can use wordlists/brute force to find directories and files on web servers
 
-* SQL Injections
-	
-	**Classic SQL Injection**
-
-	Often when parsing user input in SQL, the request formed will be something along the lines of: 
-
-	```
-	SELECT author,title,year FROM books WHERE publisher = ‘O’Reilly’ and published=1
-	```
-
-	If the parsing of input is done incorrectly, you can use a ``` ' ``` in a input field and break out of the statement to inject your own code.
-
-	Often an injection will be something along the lines of 
-
-	```
-	admin' OR 1=1--
-	OR 1=1--
-	```
-* JSON Web Tokens (JWT)
-
-    //TODO
-
-    Tool: [jwt_tool](https://github.com/ticarpi/jwt_tool)
-
 ## Forensics
 
 * Least Significant Bit
 
     //TODO
 
+* Tools
+
+    * [stegsolve](https://github.com/zardus/ctf-tools/blob/master/stegsolve/install)
+
+        - Image steganography tool.
+
+    * [Sonic Visualizer](https://www.sonicvisualiser.org/)
+
+        - Audio file analysis tool that can be used to extract and visualize data.
+
+    * [binwalk](https://github.com/ReFirmLabs/binwalk)
+
+        - Analyze file formats and extract hidden file formats inside.
+
 ## Reversing
 
-* Resources
+* Tools
 
     * [Ghidra](https://www.nsa.gov/resources/everyone/ghidra/) 
         
         - A powerful open-source reverse engineering tool developed by the NSA.
+
 
 ## Binary Exploitation
 
@@ -167,8 +189,3 @@ A list of techniques and resources compiled by the UMass Pentest Club meant to s
 
         - Very detailed youtube videos that thoroughly teach and explain many common binary exploitation methods. Heavily recommended especially if you are new to binary exploitation.
 
-## General Resources
-
-* [Awesome-CTF](https://github.com/apsdehal/awesome-ctf)
-
-    - A curated list of CTF frameworks, libraries, resources, softwares and tutorials. 
