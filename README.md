@@ -141,16 +141,17 @@ A list of techniques and resources compiled by the UMass Pentest Club meant to s
 	```
 * JSON Web Tokens (JWT)
 
-    [jwt_tool](https://github.com/ticarpi/jwt_tool)
+    //TODO
+
+    Tool: [jwt_tool](https://github.com/ticarpi/jwt_tool)
 
 ## Forensics
-
-
-## Reversing
 
 * Least Significant Bit
 
     //TODO
+
+## Reversing
 
 * Resources
 
