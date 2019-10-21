@@ -10,6 +10,10 @@ A list of techniques and resources compiled by the UMass Pentest Club meant to s
 
     - A curated list of CTF frameworks, libraries, resources, softwares and tutorials. 
 
+* [ctf-tools](https://github.com/zardus/ctf-tools)
+
+    - A collection of setup scripts to install security research tools.
+
 ## Cryptography
 
 * Caesar Cipher
