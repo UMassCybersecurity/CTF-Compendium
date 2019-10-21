@@ -1,13 +1,10 @@
 # CTF-Compendium
 
-> UMass Pentest Club
+## Overview
 
----
+A list of techniques and resources compiled by the UMass Pentest Club meant to serve as lookup table to solutions of CTF problems.
 
-A list of CTF problems, techniques and guides mean to be a lookup table to possible solutions of CTF problems
-
-## **Cryptography**
-
+## Cryptography
 
 * Caesar Cipher
 
@@ -86,9 +83,9 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
 	//TODO
 
-## **Web**
+## Web
 
-* General Tatics
+* General Tactics
 
 	Web exploits are usually able to be classified into three categories
 
@@ -98,9 +95,9 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
 	- Access Control
 
-* Robots.txt 
+* `robots.txt` 
 	
-	When given a website, always check for a /robots.txt file at the root link. You may never know what will be hidden there.
+	When given a website, always check for a `robots.txt` file at the index. You may never know what will be hidden there.
 
 * Classic Tools
 
@@ -114,15 +111,15 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 
     * [Burpsuite](https://portswigger.net/burp)
 
-        - Modern tool for analyzing web applications.
+        - Modern tool for analyzing web applications
 
     * [EditThisCookie](http://www.editthiscookie.com/)
 
-        - Open-source web browser extension for editing cookies.
+        - Open-source web browser extension for editing cookies
 
     * [DirBuster](https://tools.kali.org/web-applications/dirbuster)
 
-        - Multi-threaded java application that can use wordlists/brute force to find directories and files on web servers.
+        - Multi-threaded java application that can use wordlists/brute force to find directories and files on web servers
 
 * SQL Injections
 	
@@ -142,14 +139,35 @@ A list of CTF problems, techniques and guides mean to be a lookup table to possi
 	admin' OR 1=1--
 	OR 1=1--
 	```
+* JSON Web Tokens (JWT)
+
+    [jwt_tool](https://github.com/ticarpi/jwt_tool)
 
 ## Forensics
 
 
 ## Reversing
 
-Ghidra is an open-source reverse engineering tool developed by the NSA.
+* Least Significant Bit
+
+    //TODO
+
+* Resources
+
+    * [Ghidra](https://www.nsa.gov/resources/everyone/ghidra/) 
+        
+        - A powerful open-source reverse engineering tool developed by the NSA.
 
 ## Binary Exploitation
 
+* Resources
 
+    * [LiveOverflow's Youtube channel](https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w)
+
+        - Very detailed youtube videos that thoroughly teach and explain many common binary exploitation methods. Heavily recommended especially if you are new to binary exploitation.
+
+## General Resources
+
+* [Awesome-CTF](https://github.com/apsdehal/awesome-ctf)
+
+    - A curated list of CTF frameworks, libraries, resources, softwares and tutorials. 
